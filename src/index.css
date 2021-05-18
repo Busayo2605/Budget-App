@@ -1,0 +1,217 @@
+*{
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+}
+body{
+  overflow: hidden;
+}
+
+.container{
+  background: rgb(25, 167, 25);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+}
+
+.app-wrapper{
+  background: rgb(4, 88, 4);
+  padding: 40px;
+  width: 90%;
+  height: 85%;
+  border-radius: 30px;
+  justify-content: space-between;
+  align-items: flex-start;
+  box-shadow: 3px 3px green;
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: inherit;
+  flex-shrink: inherit;
+}
+
+.balance{
+  width: 33%;
+  padding: 40px 0;
+  color: #fff;
+}
+
+.heading{
+  font-size: 35px;
+  color: #fff;
+  font-family: cursive;
+}
+
+.total-balance{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-evenly;
+  font-size: 35px;
+  font-family: cursive;
+  margin-bottom: 30%;
+}
+
+.income-expense{
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 20px;
+  width: 100%;
+  height: 100%;
+  margin-top: -25px;
+}
+
+.expense-container{
+  width: 33.3%;
+}
+.income-container{
+  width: 33.3%;
+}
+.income,
+.expense{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+input{
+  display: block;
+  border: none;
+  height: 45px;
+  width: 95%;
+  outline: none;
+  padding: 15px;
+  color: #fff;
+  border-bottom: 2px solid rgb(5, 58, 5);
+  background: transparent;
+  margin-bottom: 20px;
+}
+
+.Submit{
+  background: green;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin-top: 5%;
+  margin-bottom: 15%;
+}
+
+h4{
+  font-size: 20px;
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 5%;
+}
+
+ul{
+  list-style: none;
+  color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+li{
+  display: flex;
+  width: 90%;
+  justify-content: space-evenly;
+  margin-bottom: 10px;
+}
+
+.transtion-info{
+  display: flex;
+  background: green;
+  width: 85%;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.trash{
+  background: transparent;
+  border: none;
+}
+i {
+  color: red;
+  font-size: 16px;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .app-wrapper{
+    background: rgb(4, 88, 4);
+    padding: 20px;
+    justify-content: center;
+  }
+
+  .transtion-info{
+    font-size: 12px;
+    width: 85%;
+    padding: 5px;
+  }
+
+  h4{
+    font-size: 16px;
+  }
+
+  .heading{
+    font-size: 25px;
+    margin-bottom: 35px;
+  }
+
+  .total-balance{
+    font-size: 25px;
+    margin-bottom: 20%;
+  }
+
+  .income-expense{
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
+    margin-top: -25px;
+  }
+
+  h4{
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+ 
+}
+@media only screen and (max-width: 750px) {
+  .balance{
+    width: 100%;
+    padding: 40px 0;
+    color: #fff;
+  }
+  body{
+    overflow: scroll;
+  }
+
+  .container{
+    background: rgb(25, 167, 25);
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .expense-container{
+    width: 100%;
+  }
+  .income-container{
+    width: 100%;
+  }
+
+  li{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+  }
+  
+  .income,
+  .expense{
+    justify-content: center;
+    align-items: center;
+  }
+}
